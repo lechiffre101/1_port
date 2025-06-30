@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sid Pragya Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="fanta.css" />
+    <script
+      src="https://kit.fontawesome.com/daf3fd236c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <a href="/">Sid P</a>
+      <nav>
+        <a target="_blank" href="https://github.com/sthita-sid-pragya"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a target="_blank" href="https://github.com/lechiffre101"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a target="_blank" href="https://www.linkedin.com/in/sid-pragya"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="intro-header">
+          <h1>Sid Pragya</h1>
+          <p>Software Engineer</p>
+        </div>
+        <h5 class="intro-description">
+          A computer scientist by qualification, and a software engineer by
+          trade. Based in Toronto, I love to hike, workout, and build out all
+          sorts of useful applications!
+        </h5>
+        <div class="links-container">
+          <i class="fa-solid link-arrow fa-arrow-right"></i>
+          <a href="mailto:ssthitap@gmail.com"> Email me </a>
+          <a target="_blank" href="https://github.com/sthita-sid-pragya"
+            >GitHub-1</a
+          >
+          <a target="_blank" href="https://github.com/lechiffre101">GitHub-2</a>
+          <a target="_blank" href="https://www.linkedin.com/in/sid-pragya"
+            >Linkedin</a
+          >
+        </div>
+
+        <div id="play-game">
+          <button onclick="playGame()">Play game 🎲???</button>
+        </div>
+        <div style="display: none" class="color-div">
+          <h4>Pick a color</h4>
+          <p style="display: none">Now it's ruined!</p>
+          <input
+            type="color"
+            id="color-picker"
+            onchange="changeColor()"
+            value="#FC9601"
+          />
+          <button style="display: none" onclick="resetColor()">Reset</button>
+        </div>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Area</th>
+              <th>Technologies</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>JavaScript</td>
+              <td>
+                ReactJS | React Native | NextJS | NodeJS & ExpressJS | MongoDB |
+                Redux |
+              </td>
+            </tr>
+            <tr>
+              <td>Python</td>
+              <td>Data analysis | Django | Data visualization</td>
+            </tr>
+            <tr>
+              <td>Web-Dev</td>
+              <td>
+                TailwindCSS | FantaCSS | Firebase |PostgreSQL | GIT | Docker |
+                CI/CD Kubernetes | AWS | SupaBase
+              </td>
+            </tr>
+            <tr>
+              <td>Design</td>
+              <td>Canvas | Pixlr | Microsoft Paint</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Latest Projects</h2>
+        <div class="cards-grid">
+          <div class="project-card">
+            <div>
+              <p>May 11, 2025</p>
+              <h4>The Brogram 🪐</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary">
+                  <p>ReactJS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>JavaScript</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>CSS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>HTML</p>
+                </div>
+              </div>
+              <p>
+                Brogram is a fitness tracker that tracks your workouts for 30
+                days while giving you a kickstart into compound lifting.
+              </p>
+              <div class="project-links">
+                <a target="_blank" href="https://brogram-sidp.netlify.app/"
+                  >Live</a
+                >
+                <a
+                  target="_blank"
+                  href="https://github.com/lechiffre101/Brogram"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="img-div">
+              <img
+                class="big-img"
+                src="/1_port/public/brogram.png"
+                alt="smolJames-thumbnail"
+              />
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div>
+              <p>May 11, 2025</p>
+              <h4>The Wild Oasis 🏔️</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary">
+                  <p>NextJS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>ReactJS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>JavaScript</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>CSS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>HTML</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>SupaBase</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>Google API</p>
+                </div>
+              </div>
+              <p>
+                The Wild Oasis is a full-stack cabin management system. Designed
+                with a smooth UI for a smooth UX. Backend Credentials: User:
+                test@test.com Pass: test1234
+              </p>
+              <div class="project-links">
+                <a
+                  target="_blank"
+                  href="https://the-wild-oasis-website-sidp.netlify.app/"
+                  >Frontend UI</a
+                >
+                <a target="_blank" href="https://sid-vacations-app.netlify.app"
+                  >Backend</a
+                >
+                <a
+                  target="_blank"
+                  href="https://github.com/lechiffre101/the-wild-oasis-website"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="img-div">
+              <img
+                class="big-img"
+                src="/1_port/public/Wild_Oasis.png"
+                alt="smolJames-thumbnail"
+              />
+            </div>
+          </div>
+          <div class="project-card">
+            <div>
+              <p>June 25, 2025</p>
+              <h4>Expenny</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary">
+                  <p>NextJS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>FireBase</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>ReactJS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>HTML</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>CSS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>JavaScript</p>
+                </div>
+              </div>
+              <p>
+                Expenny is a full-stack application tracking your subscriptions
+                while maintaining discretion through authentication.
+              </p>
+              <div class="project-links">
+                <a target="_blank" href="https://sidpexpenny.netlify.app/"
+                  >Live</a
+                >
+                <a
+                  target="_blank"
+                  href="https://github.com/lechiffre101/Expenny"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="img-div">
+              <img
+                class="big-img"
+                src="/1_port/public/expenny.png"
+                alt="smolJames-thumbnail"
+              />
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div>
+              <p>May 25, 2025</p>
+              <h4>PathFinder Visualizer 🐝</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary">
+                  <p>ReactJS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>JavaScript</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>CSS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>HTML</p>
+                </div>
+              </div>
+              <p>
+                Pathfinding Visualizer shows the different algorithms used in
+                dynamic programming to achieve the path from specified nodes.
+              </p>
+              <div class="project-links">
+                <a target="_blank" href="https://pathfindersidp.netlify.app/"
+                  >Live</a
+                >
+                <a
+                  target="_blank"
+                  href="https://github.com/lechiffre101/sortingVisualizer"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="img-div">
+              <img
+                class="big-img"
+                src="/1_port/public/pathFinder.png"
+                alt="smolJames-thumbnail"
+              />
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div>
+              <p>May 25, 2025</p>
+              <h4>The C++ Store ⚖️</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary">
+                  <p>NextJS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>FireBase</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>ReactJS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>HTML</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>CSS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>JavaScript</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>Stripe</p>
+                </div>
+              </div>
+              <p>The C++ Store is a full-stack E-Commerce store.</p>
+              <div class="project-links">
+                <a target="_blank" href="https://sidpcppstore.netlify.app/"
+                  >Live</a
+                >
+                <a
+                  target="_blank"
+                  href="https://github.com/lechiffre101/casterlyrock"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="img-div">
+              <img
+                class="big-img"
+                src="/1_port/public/C++store.png"
+                alt="smolJames-thumbnail"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        By
+        <a href="https://www.linkedin.com/in/sid-pragya" target="_blank"
+          >Sid Pragya</a
+        >
+        ⭐️ the repo on
+        <a target="_blank" href="https://github.com/lechiffre101">GitHub</a>
+      </p>
+    </footer>
+    <script>
+      // This is where we create the interactivity for our little color switching game
+
+      //1. select all the html elements so that we can later manipulate them
+      const body = document.querySelector("body");
+      const colorInput = document.getElementById("color-picker");
+      const colorDiv = document.querySelector(".color-div");
+      const hiddenText = document.querySelector(".color-div p");
+      const resetBtn = document.querySelector(".color-div button");
+      const playBtn = document.getElementById("play-game");
+      //2. create the functions
+
+      function playGame() {
+        // this function enables the play of the game by showing the color selector input
+        colorDiv.style.display = "block";
+        playBtn.style.display = "none";
+      }
+
+      function changeColor() {
+        // take the users selected color on the input, and assign it
+        // be the background color of the website
+        const selectedColor = colorInput.value;
+        body.style.background = selectedColor;
+        resetBtn.style.display = "block";
+        hiddenText.style.display = "block";
+        colorInput.style.display = "none";
+      }
+
+      function resetColor() {
+        body.style.background = "white";
+        colorInput.style.display = "block";
+        playBtn.style.display = "block";
+
+        hiddenText.style.display = "none";
+        resetBtn.stye.display = "none";
+        colorDiv.style.display = "none";
+      }
+
+      //3. is to assign the functions to the buttons by adding them function call to them
+      // function call tot he actual elements(done aboce in the html code).
+    </script>
+  </body>
+</html>
